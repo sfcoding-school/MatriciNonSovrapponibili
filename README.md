@@ -7,12 +7,18 @@
 **Problema:** dire se esistono K matrici di dimensione NxM (N righe M colonne)  
 che abbiano come elementi numeri interi nell'insieme {1,2,3,4,...,Q}.  
 Le K matrici devono essere a due a due non  sovrapponibili.  
-
 Due matrici sono sovrapponibili se possono essere anche parzialmente sovrapposte.  
+
+## Progetto
+Si è usato: gringo version 4.2.1, clasp version 2.1.4  
+
+Avvio programma: gringo progetto.lp | clasp  
+
+### Esempio
 Per esempio, con N=3 M=5 e Q=5:  
 
  4 1 2 3 4  
- 2 2 3 1 5   
+ 2 2 3 1 5  
  1 1 1 2 2  
 
 e' sovrapponibile con  
@@ -40,3 +46,4 @@ infatti possono essere scritte in questo modo:
  1 1 1 2 2 4 2 3 2   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 2 2 2 1  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 1 3 4 1  
+
