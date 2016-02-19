@@ -1,6 +1,6 @@
 
 nRows(3).
-nCols(6).
+nCols(3).
 setQ(3).
 valK(4).
 
