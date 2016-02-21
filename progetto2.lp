@@ -25,7 +25,7 @@ checkSubMatrixSX(Id, Id2) :- valuesID(Id), valuesID(Id2), Id != Id2, rows(X), co
 % -------------------------------------------- DIAGONALE R to L --------------------------------------------------------------
 % ----------------------------------------------------------------------------------------------------------------------------
 
-checkSubMatrixDXAUX(Id, Id2, X, Y) :- rows(A), cols(B), X <= A, B <= Y, rows(X), cols(Y), valuesID(Id), valuesID(Id2), Id != Id2, m(Id, A, B, Val), m(Id2, A-X+1, M-(Y-B), Val2), nCols(M), nRows(N), Val != Val2.
+checkSubMatrixDXAUX(Id, Id2, X, Y) :- rows(A), cols(B), X <= A, B <= Y, rows(X), cols(Y), valuesID(Id), valuesID(Id2), Id != Id2, m(Id, A, B, Val), m(Id2, A-X+1, M-(Y-B), Val2), nCols(M), Val != Val2.
 
 checkSubMatrixDX(Id, Id2) :- valuesID(Id), valuesID(Id2), Id != Id2, rows(X), cols(Y), not checkSubMatrixDXAUX(Id, Id2, X, Y).
 
