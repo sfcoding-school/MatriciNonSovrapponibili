@@ -74,3 +74,5 @@ checkSubMatrixSxAUX(Id, Id2, X, Y, Z, W) :- rows(X), cols(Y), rows(Z), cols(W), 
 checkSubMatrixSx(Id, Id2) :- valuesID(Id), valuesID(Id2), Id != Id2, rows(X), cols(Y), nCols(Z), checkSubMatrixAUX(Id, Id2, X, Y, 1, Z).
 
 :- checkSubMatrixSx(Id, Id2), valuesID(Id), valuesID(Id2), Id != Id2.
+
+#show m/4.

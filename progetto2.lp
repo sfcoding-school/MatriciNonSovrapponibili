@@ -1,8 +1,8 @@
 
-nRows(3).
+nRows(2).
 nCols(3).
-setQ(3).
-valK(4).
+setQ(2).
+valK(2).
 
 rows(1..X) :- nRows(X).
 cols(1..X) :- nCols(X).
@@ -30,3 +30,5 @@ checkSubMatrixDXAUX(Id, Id2, X, Y) :- rows(A), cols(B), X <= A, B <= Y, rows(X),
 checkSubMatrixDX(Id, Id2) :- valuesID(Id), valuesID(Id2), Id != Id2, rows(X), cols(Y), not checkSubMatrixDXAUX(Id, Id2, X, Y).
 
 :- checkSubMatrixDX(Id, Id2), valuesID(Id), valuesID(Id2), Id != Id2.
+
+%#show m/4.
